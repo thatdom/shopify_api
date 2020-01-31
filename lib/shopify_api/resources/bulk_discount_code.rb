@@ -1,6 +1,6 @@
 module ShopifyAPI
   class BulkDiscountCode < Base
-    self.prefix = "/admin/price_rules/:price_rule_id/batch/:batch_id/"
+    self.resource_prefix = "price_rules/:price_rule_id/batch/:batch_id/"
 
     self.collection_name = 'discount_codes'
     self.element_name = 'discount_codes'
